@@ -6,9 +6,12 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+
+
 
 html {
     color: #222;
@@ -96,6 +99,91 @@ textarea {
    ========================================================================== */
 
 
+   /* COLORS =============================================
+   Dark Pink (Magenta): #b21e49;
+   Light Grey: #eeeeee;
+   Bright Pink: #ff1256;
+   Dark Grey: #222222;
+   Blue: #23a4cc;
+   ============================================= */
+
+
+   body, html{
+   	font-family: 'Source Sans Pro', sans-serif;
+   	font-size:16px;
+   	color:#222;
+   	background-color:#eee;
+
+   }
+
+
+
+a {
+	font-weight:bold;
+	color:#23a4cc;
+  text-decoration:none;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.4em;
+  color: #222222;
+}
+
+
+}
+
+h1, h2, h3, h4 {
+  color: #222222;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.31em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+
+}
+
+h4{
+
+}
+
+
+.btn{
+  background-color:#b21e49;
+	border:none;
+	color:#fff;
+	font-weight:bold;
+	text-transform:uppercase;
+	line-height:2.5em;
+	text-align: center;
+	box-shadow:2px 2px 0px #DADADA;
+	height:2.5em;
+	width:100%;
+	display:block;
+
+}
+.btn:hover{
+  background-color:#ff1256;
+}
+
+input.btn{
+	background-color:#ff1256;
+}
+
+input.btn:hover{
+	background-color:#b21e49;
+}
 
 /***** HEADER *****/
 
@@ -103,31 +191,56 @@ header {
   width: 100%;
 }
 
+#logo {
+  width: 90%;
+  margin: auto;
+  background: #000000;
+  text-align: center;
+  padding: 3%;
+}
+
 nav {
   width: 100%;
 }
 
+nav i {
+  padding-right: 50px;
+}
+
 nav ul {
   margin: auto;
+  list-style: none;
+  padding: 0px;
 }
 
 nav ul li {
+  text-align: center;
+  background: #dddddd;
+  padding: 1em 0;
+  border-bottom: 1px solid #d6d3d4;
 
 }
 
-#logo {
-  width: 90%;
-  margin: auto;
+nav ul li a{
+  font-size:18px;
+  text-transform:uppercase;
+  color:#222222;
 }
 
-/***** MAIN CONTENT *****/
+nav .subnav {
+  display: none;
+}
+
+
+/***** MAIN CONTENT ***********************************/
 
 #main-content{
+  clear: both;
   width: 96%;
   padding: 0 2%;
 }
 
-    /***** Featured Item *****/
+/***** Featured Item ***********************************/
 
 .hero-area {
   width: 100%;
@@ -135,13 +248,16 @@ nav ul li {
 
 .top-story {
   width: 100%;
+  border-bottom: 1px solid #cccccc;
 }
 
-.top-img {
+.top-img img{
   width: 100%;
+  margin: 0px;
+  height: auto;
 }
 
-    /***** Sidebar Content *****/
+    /***** Sidebar Content ***********************************/
 
 .sidebar {
   width: 100%;
@@ -149,33 +265,76 @@ nav ul li {
 
 .newsletter {
   width: 100%;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 20px;
 }
 
 .newsletter-signup {
   width: 100%;
 }
 
+.newsletter input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.newsletter input[type="text"]{
+  margin-bottom:10px;
+  padding:5px 0px;
+}
+
 .sidebar-upcoming {
   width: 100%;
-
+  display: none;
 }
 
 .sidebar-faq {
   width: 100%;
+  display: none;
 
 }
 
-    /***** Feed Section *****/
+    /***** Feed Section ***********************************/
 
 .feed {
   width: 100%;
 }
 
+.feed p {
+  display: none;
+}
+
 .feed-item {
-  width: 100%;
   clear: both;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 15px;
 
 }
+
+.feed-item {
+  clear: both;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 15px;
+
+}
+
+.bottom{
+  border-bottom: none;
+}
+
+.feed-item h2 a{
+  color: black;
+}
+
+.feed-item h2 a:hover{
+  color: #23a4cc;
+}
+
+.feed-item h3 {
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
 
 .feed-img {
   width: 45%;
@@ -184,19 +343,24 @@ nav ul li {
   margin: 0px;
 }
 
-.feed p {
-  display: none;
-}
 
-/***** FOOTER *****/
+
+/***** FOOTER ***********************************/
 
 footer {
-  width: 70%;
+  width: 100%;
   margin: auto;
+  border-top:1px solid #ccc;
+  padding-top:20px;
+  margin-top:20px;
 }
 
 #footer-logo {
-  margin: auto;
+  width: 60%;
+	background-color:#000;
+	text-align:center;
+	margin:auto;
+	padding:5%;
 }
 
 /* ==========================================================================
@@ -284,9 +448,25 @@ footer {
 
   /*****HEADER*****/
 
+  .grey-line{
+    width:100%;
+    height:2em;
+    position:absolute;
+    top:16px;
+    background:#dddddd;
+  }
+
+  header{
+    width:94%;
+    max-width:960px;
+    margin:auto;
+  }
+
   #logo {
     width: 40%;
-    float: left;
+    float:left;
+		position:relative;
+		z-index:100;
   }
 
   nav {
@@ -294,9 +474,20 @@ footer {
     float: right;
   }
 
+  nav ul li {
+    display:block;
+    float:right;
+    padding:0 4%;
+    border:none;
+    line-height:2em;
+    position:relative;
+    top:16px;
+    border: 1px solid black;
+  }
+
   /***** Featured Item *****/
   .top-story {
-       width:100%;
+       width:94%;
        overflow: auto;
    }
    .top-img {
