@@ -8,28 +8,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
 
+        <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Sansita+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <script src="https://use.fontawesome.com/6ffff80eed.js"></script>
     </head>
     <body>
 
+      <!--[if lt IE 8]>
+          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
 <!-- Header Area -->
 
+        <div class="grey-line"></div>
         <header>
           <div id="logo"><img src="img/logo.png" alt="Unplugged"></div>
           <nav>
             <ul>
-              <li><a href="#">Concerts</a></li>
-              <li><a href="#">Reviews</a></li>
-              <li><a href="#">About Us</a>
-                <ul class="subnav">
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Who We Are &amp; Contact</a></li>
-                </ul>
-              </li>
+              <li><a href="#"><i class="fa fa-music" aria-hidden="true"></i>Concerts</a></li>
+              <li><a href="#"><i class="fa fa-headphones" aria-hidden="true"></i>Reviews</a></li>
+              <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>About Us</a>
             </ul>
           </nav>
         </header>
@@ -42,45 +47,47 @@
                 <img src="img/top-review-photo.png" alt="top review photo" />
               </figure>
               <div class="top-info">
-                <h1>Wilco Announces a New Album and a Summer Tour</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum nunc id aliquam pulvinar. Integer quis est efficitur, pulvinar orci sed, tincidunt felis. Nulla vehicula nulla quis purus aliquet hendrerit. Nam sollicitudin blandit nibh.</p>
+                <header>
+                  <h1>Wilco Announces a New Album and a Summer Tour</h1>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum nunc id aliquam pulvinar.</p>
               </div>
             </article>
+<!-- Sidebar -->
+            <aside class="sidebar">
+              <div class="newsletter">
+                <h2>Newsletter Signup</h2>
+                <form class="newsletter-signup">
+                  <input type="text">
+                  <input type="submit" class="btn" value="Sign Up">
+                </form>
+              </div>
+              <div class="sidebar-upcoming">
+                <h2>Upcoming Concerts</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum nunc id aliquam pulvinar.</p>
+                <a href="#" class="btn">See All</a>
+              </div>
+              <div class="sidebar-faq">
+                <h2>Frequently Asked Questions</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum nunc id aliquam pulvinar.</p>
+                <a href="#" class="btn">See All</a>
+              </div>
+            </aside>
           </section>
-          <aside class="sidebar">
-            <section class="newsletter">
-              <h2>Newsletter Signup</h2>
-              <form class="newsletter-signup">
-                <input type="text">
-                <input type="submit" class="btn" value="Sign Up">
-              </form>
-            </section>
-            <section class="sidebar-upcoming">
-              <h2>Upcoming Concerts</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum nunc id aliquam pulvinar.</p>
-              <a href="#" class="btn">See All</a>
-            </section>
-            <section class="sidebar-faq">
-              <h2>Frequently Asked Questions</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum nunc id aliquam pulvinar.</p>
-              <a href="#" class="btn">See All</a>
-            </section>
-          </aside>
-
 <!-- News Feed Area -->
           <section class="feed">
             <h3>Recent News &amp; Reviews</h3>
 
-            <article class="feed-item">
+            <article class="feed-item clearfix">
               <h3>News</h3>
               <figure class="feed-img">
                   <a href="#"><img src="img/feed-1.png" alt="Arcade Fire" /></a>
               </figure>
-              <h2><a href="#">Arcade Fire Drops Hints About a new Side Project in a Recent Interview - What Will it Be?</a></h2>
+              <h2><a href="#">Arcade Fire Drops Hints About a new Side Project - What Will it Be?</a></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum nunc id aliquam pulvinar.</p>
             </article>
 
-            <article class="feed-item">
+            <article class="feed-item clearfix">
               <h3>News</h3>
               <figure class="feed-img">
                   <a href="#"><img src="img/feed-2.png" alt="Roundup" /></a>
@@ -89,7 +96,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum nunc id aliquam pulvinar.</p>
             </article>
 
-            <article class="feed-item">
+            <article class="feed-item clearfix">
               <h3>News</h3>
               <figure class="feed-img">
                   <a href="#"><img src="img/feed-3.png" alt="Laura Marling" /></a>
@@ -98,7 +105,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum nunc id aliquam pulvinar.</p>
             </article>
 
-            <article class="feed-item">
+            <article class="feed-item clearfix">
               <h3>Review</h3>
               <figure class="feed-img">
                   <a href="#"><img src="img/feed-4.png" alt="Mumford" /></a>
@@ -107,7 +114,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum nunc id aliquam pulvinar.</p>
             </article>
 
-            <article class="feed-item">
+            <article class="feed-item clearfix">
               <h3>Review</h3>
               <figure class="feed-img">
                   <a href="#"><img src="img/feed-5.png" alt="Mumford" /></a>
@@ -116,7 +123,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum nunc id aliquam pulvinar.</p>
             </article>
 
-            <article class="feed-item">
+            <article class="feed-item bottom clearfix">
               <h3>Review</h3>
               <figure class="feed-img">
                   <a href="#"><img src="img/feed-6.png" alt="National" /></a>
